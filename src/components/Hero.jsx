@@ -10,7 +10,9 @@ export default function Hero() {
         </div>
         
         <p className='text-sm md:text-base font-light'>I hereby declare to run the <span className='text-blue-400 font-medium'>Kathmandu 5k on September 28th 2024</span> at my <span className='text-blue-400 font-medium'>personal best</span> pace and give it my all. I will also do my best to reduce my weight by following a <span className='text-blue-400 font-medium'>diet plan</span> and <span className='text-blue-400 font-medium'>working out </span>daily!!!</p>
-        <Button text={"Accept and Begin"} />
+        <Button func={()=>{
+          window.location.href = '#generate'
+        }} text={"Accept and Begin"} />
     </div>
   )
 }
